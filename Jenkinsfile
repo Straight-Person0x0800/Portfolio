@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'docker built -t portfolio_front_end:v1 .'
+      }
+    }
+
   }
 }
