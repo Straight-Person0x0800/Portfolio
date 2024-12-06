@@ -1,0 +1,245 @@
+{
+  "facebookLink": false,
+  "YoutubeLink": false,
+  "email": "email@exemple.com",
+  "linkInLink": "https://linkin.com/HelloWorld",
+  "Number": "+212600000000",
+  "globalColor": {
+    "primaryColor": "#1D4ED8",
+    "secondaryColor": "#10B981",
+    "fontColor": "#FFFFFF"
+  },
+  "links": [
+    { "name": "Home", "href": "#" },
+    { "name": "About", "href": "#about" },
+    { "name": "Services", "href": "#services" },
+    { "name": "Contact", "href": "#contact" }
+  ],
+  "NavigationData": {
+    "colorPlates": {
+      "primaryColor": "#111827",
+      "secondaryColor": "#FFEE58",
+      "fontColor": "#FFFFFF"
+    },
+    "style": {
+      "nav": "shadow-lg fixed top-0 z-50",
+      "container": "container mx-auto px-6 py-4 flex justify-between items-center",
+      "logo": "text-2xl font-semibold",
+      "navLinks": "hidden md:flex space-x-8",
+      "link": "font-medium transition-colors duration-300",
+      "mobileMenu": "absolute top-0 left-0 w-full p-6",
+      "mobileLink": "block text font-medium py-3"
+    },
+    "logo": "Karl"
+  },
+  "about": {
+    "colorPlates": {
+      "primaryColor": "#111827",
+      "secondaryColor": "#FFEE58",
+      "fontColor": "#FFFFFF"
+    },
+    "style": {
+      "section": "min-h-screen flex items-center justify-center py-24 relative",
+      "container": "container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12",
+      "imageContainer": "flex justify-center items-center relative mb-12 md:mb-0",
+      "image": "w-64 h-64 md:w-96 md:h-96 object-cover rounded-full shadow-2xl border-4",
+      "textContainer": "flex flex-col justify-center items-center space-y-6 text-center md:text-left md:items-start",
+      "title": "text-4xl md:text-5xl font-bold",
+      "subtitle": "text-2xl md:text-3xl font-semibold",
+      "highlight": "p-1",
+      "description": "text-lg md:text-xl max-w-2xl mx-auto md:mx-0",
+      "buttonContainer": "mt-8 flex justify-center md:justify-start",
+      "button": "px-6 py-3 rounded-full text-lg font-semibold transition-colors duration-300"
+    },
+    "content": {
+      "imageSrc": "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
+      "altText": "Profile Picture",
+      "title": "Hello, My name is Karl",
+      "subtitle": "I am a",
+      "highlightedText": "DevOps Engineer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Curabitur euismod orci sapien, ac suscipit justo euismod sit amet.",
+      "button": {
+        "text": "Download CV",
+        "url": "/path-to-cv.pdf"
+      }
+    }
+  },
+  "sections": {
+    "1": {
+      "colorPlates": {
+        "primaryColor": "#111827",
+        "secondaryColor": "#FFEE58",
+        "fontColor": "#FFFFFF"
+      },
+      "title": "My services",
+      "description": "I offer a wide range of services to bring your ideas to life, from creating web applications to managing system infrastructure.",
+      "style": {
+        "section": "min-h-screen flex flex-col justify-center py-20 sm:py-16 md:py-20 lg:py-24",
+        "titleAndDescriptionContainer": "flex flex-col items-center mb-12 space-y-4",
+        "title": "text-blue-900 text-5xl sm:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-blue-500 decoration-3",
+        "description": "text-gray-800 text-lg sm:text-base leading-relaxed max-w-3xl text-center mb-10 px-4 sm:px-6",
+        "cardDisposition": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 auto-rows-auto",
+        "card": "bg-white border border-gray-300 rounded-xl shadow-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl overflow-hidden",
+        "image": "rounded-t-xl w-full h-60 object-cover",
+        "content": "p-6 space-y-4 text-center bg-gray-50",
+        "tags": "flex flex-wrap justify-center gap-3",
+        "tag": "bg-blue-50 text-blue-800 py-1 px-4 rounded-full text-sm font-semibold shadow-md hover:bg-blue-100 hover:text-blue-900 transition duration-300 ease-in-out",
+        "cardTitle": "text-2xl font-bold text-gray-900 mb-3",
+        "cardDescription": "text-gray-700 text-base leading-relaxed"
+      },
+      "sectionData": {
+        "1": {
+          "imageSrc": "https://www.govloop.com/wp-content/uploads/2024/01/devops-engineer-skills-1536x773.png",
+          "altText": "DevOps Image",
+          "title": "DevOps Engineer",
+          "tags": ["Docker", "DockerSwarm", "DockerCompose", "kubernetez"],
+          "description": "DevOps enginner capable of making The team work in SYNC"
+        },
+        "2": {
+          "imageSrc": "https://db0dce98.rocketcdn.me/wp-content/uploads/2023/04/software_engineer.png",
+          "altText": "Profile Picture",
+          "title": "Web Dev",
+          "tags": ["Html", "Css", "Javascript"],
+          "description": "This is where the description of this section is going to be."
+        },
+        "3": {
+          "imageSrc": "https://buildfire.com/wp-content/uploads/2024/09/become-mobile-app-developer-1.jpg",
+          "altText": "Profile Picture",
+          "title": "Mobile Dev",
+          "tags": ["Docker", "DockerSwarm", "DockerCompose"],
+          "description": "This is where the description of this section is going to be."
+        }
+      }
+    },
+    "3": {
+      "title": "My Projects",
+      "description": "Explore some of my work, ranging from web development to mobile applications and system infrastructure.",
+      "style": {
+        "section": "min-h-screen flex flex-col justify-center py-20 bg-gradient-to-b from-white to-gray-100 sm:py-16 md:py-20 lg:py-24",
+        "titleAndDescriptionContainer": "flex flex-col items-center mb-12 space-y-4",
+        "title": "text-blue-900 text-5xl sm:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-blue-500 decoration-3",
+        "description": "text-gray-800 text-lg sm:text-base leading-relaxed max-w-3xl text-center mb-10 px-4 sm:px-6",
+        "cardDisposition": "space-y-6 px-6",
+        "card": "flex bg-white border border-gray-300 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl overflow-hidden",
+        "image": "w-64 h-64",
+        "content": "p-6 space-y-4 text-left bg-gray-50",
+        "tags": "flex flex-wrap justify-start gap-3",
+        "tag": "bg-blue-50 text-blue-800 py-1 px-4 rounded-full text-sm font-semibold shadow-md hover:bg-blue-100 hover:text-blue-900 transition duration-300 ease-in-out",
+        "cardTitle": "text-2xl font-bold text-gray-900 mb-3",
+        "cardDescription": "text-gray-700 text-base leading-relaxed"
+      },
+      "sectionData": {
+        "1": {
+          "imageSrc": "https://via.placeholder.com/400",
+          "altText": "Placeholder Project Image",
+          "title": "E-Commerce Platform",
+          "tags": ["React", "Node.js", "GraphQL"],
+          "description": "Built a scalable e-commerce platform with real-time features and a seamless user experience."
+        },
+        "2": {
+          "imageSrc": "https://via.placeholder.com/400",
+          "altText": "Placeholder Project Image",
+          "title": "Mobile Fitness App",
+          "tags": ["Flutter", "Firebase", "UX Design"],
+          "description": "Developed a fitness app to track workouts, manage nutrition plans, and integrate with wearable devices."
+        },
+        "3": {
+          "imageSrc": "https://via.placeholder.com/400",
+          "altText": "Placeholder Project Image",
+          "title": "Portfolio Website",
+          "tags": ["HTML", "CSS", "JavaScript"],
+          "description": "Created a personal portfolio website to showcase projects and technical skills, optimized for performance and accessibility."
+        }
+      }
+    },
+    "2": {
+      "title": "Best Project",
+      "description": "Highlighting my most exceptional work that demonstrates creativity, innovation, and technical mastery.",
+      "style": {
+        "section": "min-h-screen flex flex-col justify-center py-20 bg-gradient-to-b from-white to-yellow-50 sm:py-16 md:py-20 lg:py-24",
+        "titleAndDescriptionContainer": "flex flex-col items-center mb-12 space-y-4",
+        "title": "text-yellow-600 text-5xl sm:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-yellow-400 decoration-3",
+        "description": "text-yellow-800 text-lg sm:text-base leading-relaxed max-w-3xl text-center mb-10 px-4 sm:px-6",
+        "card": "relative flex flex-col items-center bg-yellow-100 border-4 border-yellow-400 rounded-3xl shadow-2xl transform transition-transform duration-300 hover:scale-110 hover:shadow-gold overflow-hidden max-w-4xl mx-auto",
+        "image": "rounded-t-3xl object-cover w-full h-72",
+        "content": "relative p-8 space-y-4 text-center bg-yellow-50 rounded-b-3xl",
+        "tags": "flex flex-wrap justify-center gap-4",
+        "tag": "bg-yellow-200 text-yellow-900 py-2 px-5 rounded-full text-sm font-semibold shadow-md hover:bg-yellow-300 hover:text-yellow-900 transition duration-300 ease-in-out",
+        "cardTitle": "text-3xl font-extrabold text-yellow-700 mb-4",
+        "cardDescription": "text-yellow-800 text-base leading-relaxed"
+      },
+      "sectionData": {
+        "1": {
+          "imageSrc": "https://media.licdn.com/dms/image/D4D12AQF7gapPpu0Xaw/article-cover_image-shrink_600_2000/0/1703644310885?e=2147483647&v=beta&t=IbyIxJFmHW2xbuwS6kkR36JVXDK7rTetRjFE6PwoVc0",
+          "altText": "Placeholder Best Project Image",
+          "title": "AI-Powered Learning Platform",
+          "tags": ["AI", "Python", "Machine Learning"],
+          "description": "Designed an innovative learning platform that uses artificial intelligence to personalize educational experiences, providing tailored recommendations and progress tracking."
+        }
+      }
+    },
+    "4": {
+      "title": "My Certifications",
+      "description": "Discover the certifications I have earned, showcasing my expertise and commitment to continuous learning.",
+      "style": {
+        "section": "min-h-screen flex flex-col justify-center py-20 bg-gradient-to-b from-white to-gray-100 sm:py-16 md:py-20 lg:py-24",
+        "titleAndDescriptionContainer": "flex flex-col items-center mb-12 space-y-4",
+        "title": "text-blue-900 text-5xl sm:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-blue-500 decoration-3",
+        "description": "text-gray-800 text-lg sm:text-base leading-relaxed max-w-3xl text-center mb-10 px-4 sm:px-6",
+        "cardDisposition": "space-y-6 px-6",
+        "card": "flex bg-white border border-gray-300 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl overflow-hidden",
+        "image": "w-64 h-64",
+        "content": "p-6 space-y-4 text-left bg-gray-50",
+        "tags": "flex flex-wrap justify-start gap-3",
+        "tag": "bg-blue-50 text-blue-800 py-1 px-4 rounded-full text-sm font-semibold shadow-md hover:bg-blue-100 hover:text-blue-900 transition duration-300 ease-in-out",
+        "cardTitle": "text-2xl font-bold text-gray-900 mb-3",
+        "cardDescription": "text-gray-700 text-base leading-relaxed"
+      },
+      "sectionData": {
+        "1": {
+          "imageSrc": "https://passyourcert.net/wp-content/uploads/2021/11/aws2.png",
+          "altText": "Placeholder Certification Image",
+          "title": "AWS Certified Solutions Architect",
+          "tags": ["AWS", "Cloud Computing", "Infrastructure"],
+          "description": "Earned the AWS Solutions Architect certification, demonstrating proficiency in designing and deploying scalable systems on AWS."
+        },
+        "2": {
+          "imageSrc": "https://images.credly.com/images/f53c1eb6-d93d-4b9e-ae34-922046f6b15c/image.png",
+          "altText": "Placeholder Certification Image",
+          "title": "Google Data Analytics Professional Certificate",
+          "tags": ["Data Analysis", "Google Cloud", "SQL"],
+          "description": "Completed the Google Data Analytics certificate, mastering data analysis tools and methodologies for actionable insights."
+        },
+        "3": {
+          "imageSrc": "https://training.linuxfoundation.org/wp-content/uploads/2018/06/logo_cka_whitetext.png",
+          "altText": "Placeholder Certification Image",
+          "title": "Certified Kubernetes Administrator",
+          "tags": ["Kubernetes", "Containers", "Orchestration"],
+          "description": "Achieved the CKA certification, showcasing expertise in managing and troubleshooting Kubernetes clusters."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Get in Touch",
+    "description": "Feel free to reach out for collaborations or just a friendly chat.",
+    "actions": {
+      "email": {
+        "link": "mailto:contact@example.com",
+        "text": "Send us an Email",
+        "style": "text-blue-500 hover:underline"
+      },
+      "number": {
+        "link": "tel:+1234567890",
+        "text": "Give us a Call",
+        "style": "text-green-500 hover:underline"
+      }
+    },
+    "style": {
+      "container": "bg-white p-8 rounded-lg shadow-md",
+      "title": "text-2xl font-bold text-center text-blue-600 mb-4",
+      "description": "text-gray-600 text-center mb-8",
+      "actionsContainer": "flex flex-col items-center space-y-4"
+    }
+  }
+}

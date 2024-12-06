@@ -1,0 +1,80 @@
+version: "3.9"
+
+services:
+
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=db            # Use the service name of the database
+      - DB_PORT=3306          # MySQL default port
+      - DB_USER=myuser        # Match the database user
+      - DB_PASSWORD=mypassword # Match the database password
+      - DB_NAME=mydatabase    # Match the database name
+      - DB_URI=mongodb://root:example@mongodb:27017/portfolioApp
+    command: nodemon --legacy-watch src/server.js
+    depends_on:
+      - db
+      - mongodb
+
+  db:
+    image: mysql:latest
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./initial-data:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_container
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: myuser
+      PMA_PASSWORD: mypassword      # Match the service name of the database
+    depends_on:
+      - db
+
+  mongo-express:
+    image: mongo-express:1.0.2
+    container_name: mongo_express_container
+    restart: always
+    ports:
+        - 8082:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongodb:27017/
+      ME_CONFIG_BASICAUTH: false
+    depends_on:
+      - mongodb
+
+volumes:
+  mysql_data:
+    name: mysql_data
+  mongo_data:
+    name: mongo_data

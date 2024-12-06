@@ -1,0 +1,56 @@
+{
+  "primaryColor": "blue",
+  "secondaryColor": "green",
+  "facebookLink": true,
+  "linkInLink": "https://linkin.com/NewWorld",
+  "Number": "+123400000000",
+  "NavigationData": {
+    "information": {
+      "logo": "Jordan"
+    },
+    "style": {
+      "nav": "bg-teal-800 shadow-xl fixed w-full top-0 z-50",
+      "container": "container mx-auto px-8 py-5 flex justify-between items-center",
+      "logo": "text-3xl font-bold text-white",
+      "navLinks": "hidden md:flex space-x-10",
+      "link": "text-gray-100 hover:text-green-400 font-medium transition-colors duration-200",
+      "mobileMenu": "absolute top-0 left-0 w-full bg-teal-800 p-8",
+      "mobileLink": "block text-gray-100 hover:text-green-400 font-medium py-4"
+    },
+    "links": [
+      { "name": "Home", "href": "/" },
+      { "name": "Portfolio", "href": "#portfolio" },
+      { "name": "Blog", "href": "#blog" },
+      { "name": "Support", "href": "#support" }
+    ]
+  },
+
+  "about": {
+    "style": {
+      "section": "min-h-screen flex items-center justify-center bg-gradient-to-r from-teal-800 to-blue-900 text-white py-24 relative overflow-hidden",
+      "container": "container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20",
+      "imageContainer": "flex justify-center items-center relative mb-12 md:mb-0 md:justify-end",
+      "image": "w-64 h-64 md:w-96 md:h-96 object-cover rounded-full shadow-xl border-4 border-green-400 transform transition-transform duration-500 hover:scale-105",
+      "textContainer": "flex flex-col justify-center items-center text-center md:text-left md:items-start",
+      "title": "text-4xl md:text-5xl font-bold leading-tight text-white",
+      "subtitle": "text-2xl md:text-3xl font-semibold text-green-400",
+      "highlight": "text-green-400",
+      "description": "text-lg md:text-xl text-gray-300 max-w-xl mx-auto md:mx-0 mb-8",
+      "buttonContainer": "flex justify-center md:justify-start",
+      "button": "bg-green-400 text-gray-900 px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 hover:bg-green-500 transform hover:scale-105",
+      "scrollIndicator": "absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gray-300 text-lg cursor-pointer hover:text-white transition-all"
+    },
+    "content": {
+      "imageSrc": "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
+      "altText": "Profile Picture",
+      "title": "Hi, I'm Jordan",
+      "subtitle": "I'm a",
+      "highlightedText": "Creative Developer",
+      "description": "Passionate about building user-centric experiences and intuitive designs. I specialize in creating modern, responsive websites and web apps with clean code, engaging UI/UX, and performance optimization. Always learning and pushing the boundaries of web development.",
+      "button": {
+        "text": "Download CV",
+        "url": "/path-to-cv.pdf"
+      }
+    }
+  }
+}
