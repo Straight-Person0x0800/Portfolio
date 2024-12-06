@@ -24,7 +24,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Build_Front_image') {
       steps {
         sh 'docker built -t portfolio_front_end:v1 .'
       }
