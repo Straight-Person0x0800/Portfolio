@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build_Front_image') {
       steps {
-        sh 'docker build -t portfolio_front_end:v1 .'
+        sh 'cd frontend && docker build -t portfolio_front_end:v1 .'
       }
     }
 
