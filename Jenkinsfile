@@ -48,5 +48,18 @@ pipeline {
       }
     }
 
+    stage('') {
+      agent {
+        node {
+          label 'node1'
+        }
+
+      }
+      steps {
+        git(url: 'https://github.com/Straight-Person0x0800/Portfolio', branch: 'master')
+        sh 'ls -la && docker-compose up -d'
+      }
+    }
+
   }
 }
