@@ -38,7 +38,7 @@ pipeline {
 
     stage('Build_Back_image') {
       steps {
-        sh 'cd .. && ls -la && cd backend && docker build -t Backend_image:v1 .'
+        sh 'ls -la && cd backend && docker build -t Backend_image:v1 .'
       }
     }
 
