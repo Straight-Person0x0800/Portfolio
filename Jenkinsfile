@@ -48,7 +48,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('test-deploy-docker-compose') {
       agent {
         node {
           label 'node1'
